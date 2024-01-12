@@ -8,7 +8,7 @@ public:
         int i(0);
         int j(n);
 
-        while (i < n && j < 2 * n) {
+        while (i < n &&  n< j < 2 * n) {
             if (isVowel(s[i])) left++;
             if (isVowel(s[j])) right++;
 
