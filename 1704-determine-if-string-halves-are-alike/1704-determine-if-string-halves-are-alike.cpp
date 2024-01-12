@@ -15,7 +15,8 @@ public:
             i++;
             j++;
         }
-        return left == right;
+        if (left == right) return true;
+        else return false;
     }
 
 private:
