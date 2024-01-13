@@ -20,11 +20,11 @@ public:
             i++;
             j++;
 
-            if (i == word1[w1].length()) {
+            if (i == word1[w1].size()) {
                 i = 0;
                 w1++;
             }
-            if (j == word2[w2].length()) {
+            if (j == word2[w2].size()) {
                 j = 0;
                 w2++;
             }
