@@ -14,9 +14,9 @@ public:
             // Increment the length of the last word
             if (s[i] != ' ') {
                 result++;
-            } else {
+            } else if (result>0){
                 // Break when a space is encountered after the last word
-                break;
+                return result;
             }
         }
 
