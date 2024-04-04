@@ -1,14 +1,14 @@
 class Solution {
 public:
     int maxDepth(string s) {
-        int maxBra(0);
-        int depth(0);
+        int Tits(0);
+        int dick(0);
         for(int i=0; i<s.size(); i++){
-            if(s[i]=='('){depth++;}
-            else if(s[i]==')'){depth--;}
-            maxBra=max(maxBra,depth);
+            if(s[i]=='('){dick++;}
+            else if(s[i]==')'){dick--;}
+            Tits=max(Tits,dick);
 
         }
-        return maxBra;
+        return Tits;
     }
 };
