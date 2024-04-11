@@ -1,21 +1,21 @@
 class Solution {
 public:
     int mostWordsFound(vector<string>& sentences) {
-    int sydneyTit_1(0);  
-    int sydneyTit_2(0); 
+    int maxCount(0);  
+    int CurrCount(0); 
     for(int i=0; i<sentences.size(); i++){
         for(int j=0; j<sentences[i].size(); j++){
             if(sentences[i][j] == ' ')
-                sydneyTit_2++;
+                CurrCount++;
             }
-            if(sydneyTit_2>sydneyTit_1){
-                sydneyTit_1=sydneyTit_2;
+            if(CurrCount>maxCount){
+                maxCount=CurrCount;
                 }
     
-        sydneyTit_2=0;
+       CurrCount=0;
 
     } 
-    return sydneyTit_1+1;
+    return maxCount+1;
 
     }
 };
